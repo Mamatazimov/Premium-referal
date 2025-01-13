@@ -50,11 +50,14 @@ async def my_referrar(callback_query: types.CallbackQuery):
 
         firstN = user.first_name 
         lastN = user.last_name or "Mavjud emas"
-        userN = user.username or "Mavjud emas"
+        if user.username:
+            userN = f"@{user.username}"
+        else:
+            userN = "Mavjud emas"
 
 
 
-        await callback_query.message.edit_text(text=f"Sizning chaqiruvchingiz:\nIsmi: {firstN}\nFamiliyasi: {lastN}\nUsername: @{userN}",reply_markup=to_back_kb)
+        await callback_query.message.edit_text(text=f"Sizning chaqiruvchingiz:\nIsmi: {firstN}\nFamiliyasi: {lastN}\nUsername: {userN}",reply_markup=to_back_kb)
 
     else:
         await callback_query.message.edit_text(text=f"Siz o'zingiz qo'shilgansiz , sizda hech qanday referrar yo'q.",reply_markup=to_back_kb)
@@ -72,10 +75,10 @@ async def user_informations(callback_query: types.CallbackQuery):
         no_info = "Mavjud emas"
         firstN = user.first_name or no_info
         lastN = user.last_name or no_info
-        userN = user.username or no_info
+        userN = f"@{user.username}" or no_info
 
         try:
-            await callback_query.message.edit_text(f"Ismingiz: {firstN}\nFamiliyangiz: {lastN}\nUsername: @{userN}\nSizning referrallaringiz soni: {my_ref}\nSizning pointlaringiz: {user_info[3]}",reply_markup=to_back_profile_kb)
+            await callback_query.message.edit_text(f"Ismingiz: {firstN}\nFamiliyangiz: {lastN}\nUsername: {userN}\nSizning referrallaringiz soni: {my_ref}\nSizning pointlaringiz: {user_info[3]}",reply_markup=to_back_profile_kb)
         except TelegramBadRequest:
             await callback_query.message.edit_text(f"Iltimos tugmalarni bosib tashlamang!!!\nAgar bosib tashlasangiz pointlaringizni 0 qilib qo'yaman :)")
     except TypeError:
@@ -85,20 +88,22 @@ async def user_informations(callback_query: types.CallbackQuery):
 async def user_promo(callback_query: types.CallbackQuery):
     user_id = callback_query.from_user.id
     promo_code = get_promo_code(user_id)
-    
-    if promo_code[0]:
-        promo_txt = ""
+    try:
+        if promo_code[0]:
+            promo_txt = ""
 
-        for promo in promo_code:
-            promo = list(promo)
-            if promo[1] == 1:
-                continue
-            promo_txt += f"<code>{str(promo[0])}</code> "
-        if promo_txt == "":
-            await callback_query.message.edit_text(f"<i>Sizda hech qanday promo-code yo'q</i>",reply_markup=to_back_profile_kb)
+            for promo in promo_code:
+                promo = list(promo)
+                if promo[1] == 1:
+                    continue
+                promo_txt += f"<code>{str(promo[0])}</code> "
+            if promo_txt == "":
+                await callback_query.message.edit_text(f"<i>Sizda hech qanday promo-code yo'q</i>",reply_markup=to_back_profile_kb)
+            else:
+                await callback_query.message.edit_text(f"<b>Sizning aktiv promo-codelaringiz:</b>\n{promo_txt}",reply_markup=to_back_profile_kb)
         else:
-            await callback_query.message.edit_text(f"<b>Sizning aktiv promo-codelaringiz:</b>\n{promo_txt}",reply_markup=to_back_profile_kb)
-    else:
+            await callback_query.message.edit_text(f"<i>Sizda hech qanday promo-code yo'q</i>",reply_markup=to_back_profile_kb)
+    except:
         await callback_query.message.edit_text(f"<i>Sizda hech qanday promo-code yo'q</i>",reply_markup=to_back_profile_kb)
 
 # menu
@@ -108,18 +113,16 @@ async def profile_menu(callback_query: types.CallbackQuery):
 # userga promo-code berish
 async def give_promo(callback_query: types.CallbackQuery):
     user_id = callback_query.from_user.id
-    print(callback_query.message)
-    print(callback_query.message.from_user)
 
     promo = create_promo_code(user_id=user_id,required_points=2)
     if promo:
         await callback_query.message.answer(f"<code>{promo}</code>")
     else:
-        await callback_query.message.edit_text(f"Sizning pointingiz promo-codega yetmaydi :{promo}{user_id}")
+        await callback_query.message.edit_text(f"Sizning pointingiz promo-codega yetmaydi!")
 
 # promo-codelar haqida malumot beruvchi funksiya
 async def promo_info(cq: types.CallbackQuery):
-    promo_info_txt = "<b>Sizga promo-codelar haqida ma'lumot bermoqchiman.</b>\n\n<i>Siz botga o'z referrallaringizni chaqirib har bir referral uchun 1 pointdan olishingiz mumkin.\n\nAgar siz chaqirgan referralingiz bizdan premium sotib olsa biz sizga u uchun yana 5 point qo'shib beramiz.\n\nSiz pointlaringizni 100 taga yetganda promo-codega aylantirib olishingiz mumkin, va adminlardan biriga tashlab bersangiz ular sizga 1oylik telegram premiumni tekinga olib berishadi.</i>"
+    promo_info_txt = "<b>Sizga promo-codelar haqida ma'lumot bermoqchiman.</b>\n\n<i>Siz botga o'z referrallaringizni chaqirib har bir referral uchun 1 pointdan olishingiz mumkin.\n\nSiz pointlaringizni 100 taga yetganda promo-codega aylantirib olishingiz mumkin, va adminlardan biriga tashlab bersangiz ular sizga 1oylik telegram premiumni tekinga olib berishadi.</i>"
     await cq.message.edit_text(promo_info_txt)
 
 # admin user_idni jo'natishi uchun so'rov
@@ -155,7 +158,7 @@ async def mandatory_channels(cq: types.CallbackQuery):
 
 # kanal qo'shish uchun habar
 async def add_channel_cq(cq: types.CallbackQuery,state:FSMContext):
-    await cq.message.answer("Qo'shmoqchi bo'lgan kanalingni id sini tashla.Qaysi adminsan bilmeman lekin tugmala bilan o'ynama.")
+    await cq.message.answer("Qo'shmoqchi bo'lgan kanalingni id sini tashla.\nQaysi adminsan bilmeman lekin tugmala bilan o'ynama.")
     await state.set_state(Channels.waiting_for_channel_id1)
 
 # kanal o'chirish uchun habar

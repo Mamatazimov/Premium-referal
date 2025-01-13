@@ -23,54 +23,36 @@ async def start_command(message: types.Message,state: FSMContext):
     channels = await get_all_channel_list()
     all_subscribed = True
     
-
-    
-
+# userning referral liknini bazaga saqlab olish
     if args:
         try:
             referrer_id = int(args[0])
+            referral_link.add_user(user_id,referrer_id)
 
         except ValueError:
             await message.answer("Referal havola noto'g'ri.")
             return
-
-        if referral_link.check_user(user_id=user_id) is True:
-            await message.answer("Siz allaqachon ro'yhatdan o'tgansiz")
-        else:
-            if referrer_id == user_id:
-                if referral_link.check_user(user_id=referrer_id) is False:
-                    await message.answer("Siz o'zingizn referral qilmoqchilingiz uchun hatolik yuz berdi.\nIltimos /start kamandasini bosib o'zingizni ro'yhatdan o'tkazing.")
-                else:
-                    await message.answer("Siz o'zingizni referal qilmoqchi bo'ldingiz ammo siz allaqachon ro'yhatdan o'tgansiz",reply_markup=main_keyboard())
-
-            elif referral_link.check_user(user_id=referrer_id) is False:
-                referral_link.add_user(user_id,referrer_id)
-                await message.answer("Sizning referraringiz ya'ni chaqiruvchingiz haqidagi ma'lumot bizning bazada topilmadi.\nBu degani siz noto'g'ri link bilan ro'yhatdan o'tdingiz.",reply_markup=main_keyboard())
-            else:
-                await message.answer("Tekshiruv uchun iltimos telefon raqamingizni jo'nating",reply_markup=phone_keyboard())
-                await state.set_state(Registration.waiting_for_phone)
-                await state.update_data(name=args)
-
     else:
-        if referral_link.check_user(user_id=user_id) is True:
-            await message.answer("Hush kelibsiz",reply_markup=main_keyboard())
-        else:
-            await message.answer("Tekshiruv uchun iltimos telefon raqamingizni jo'nating",reply_markup=phone_keyboard())
-            await state.set_state(Registration.waiting_for_phone)
-            await state.update_data(name=args)
-  
-"""
+        referral_link.add_user(user_id)
+# userni kanallarga obuna bo'lganini tekshirish
     for channel in channels:
         if channel and not await check_user_in_channel(channel,user_id):
             all_subscribed = False
             break
     if all_subscribed:
-        pass
+        referral_link.activate_is_sub(user_id) # user barcha kanallarga obuna bo'lgan bo'lsa uni activ referrar qilib bazaga belgilash
+            # user activ_userga aylanishi uchun uni nomerini tekshirish
+        if referral_link.check_active_referrer_id(user_id):
+            await message.answer("Hush kelibsiz!",reply_markup=main_keyboard())
+        else:
+            await message.answer("Iltimos telefon raqamingizni kiriting!",reply_markup=phone_keyboard())
+            await state.set_state(Registration.waiting_for_phone)
+        
+
     else:
         keyboard = await need_sub_channel_kb()
-        await message.answer("Siz bizning kanallarimizga a'zo bo'lmadingiz. Iltimos a'zo bo'lib qayta /start kamandasini bosing",reply_markup=keyboard)
-        return
-"""
+        await message.answer("<b>Siz bizning kanallarimizga a'zo bo'lmadingiz.</b>\n<i>Iltimos a'zo bo'lib qayta /start kamandasini bosing</i>",reply_markup=keyboard)
+
 
 
 

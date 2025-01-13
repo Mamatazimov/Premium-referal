@@ -82,7 +82,6 @@ def aktive_promo_stat():
     conn.close()
     return active
 
-
 def inaktive_promo_stat():
     conn = sqlite3.connect("referral.db")
     cursor = conn.cursor()

@@ -11,8 +11,8 @@ referral_blrd.row(
     InlineKeyboardButton(text="Referrarim ☑️", callback_data='my_referrar'),
     )
 referral_blrd.row(
-    InlineKeyboardButton(text="Promo-code olish", callback_data='get_promo-code'),
-    InlineKeyboardButton(text="Promo-code haqida", callback_data='promo-code_info'),
+    InlineKeyboardButton(text="Promo-code olish ☑️", callback_data='get_promo-code'),
+    InlineKeyboardButton(text="Promo-code haqida ☑️", callback_data='promo-code_info'),
     )
 
 
@@ -24,8 +24,8 @@ to_back_kb = to_back.as_markup() # orqaga harakatlanish uchun keyboard ref
 
 user_profile = InlineKeyboardBuilder()
 user_profile.row(
-    InlineKeyboardButton(text="Mening ma'lumotlarim",callback_data="user_info"),
-    InlineKeyboardButton(text="Mening promo-codelarim",callback_data="my_promocodes")
+    InlineKeyboardButton(text="Mening ma'lumotlarim 📄",callback_data="user_info"),
+    InlineKeyboardButton(text="Mening promo-codelarim 📄",callback_data="my_promocodes")
 )
 user_profile_kb = user_profile.as_markup() #foydalanuvchi bo'limi keyboardi
 

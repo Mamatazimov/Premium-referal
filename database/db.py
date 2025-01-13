@@ -10,6 +10,7 @@ def init_db():
                    user_id INTEGER UNIQUE,
                    referrer_id INTEGER,
                    active_referrer_id BOOLIEAN DEFAULT 0,
+                   is_sub BOOLIEAN DEFAULT 0,
                    points INTEGER DEFAULT 0                   
                    )
         """)

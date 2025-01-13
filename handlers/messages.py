@@ -13,24 +13,23 @@ from keyboards.inline import referral_blrd_kb,user_profile_kb,admin_menu_kb
 from utils import referral_link,promocode,channels
 
 
-photo_path = FSInputFile("media\photo\main_image.jpg")
 
 # asosiy menyu buttonlariga javob
 async def message_answers(message: types.Message):
 
 
 
-    if message.text == "Premium narxlari $" :
+    if message.text == "Premium narxlari 💸" :
         message_answer = """
 <b>Premium narxlari bilan tanishishingiz mumkin:</b>\n
 <b>Telegram akkauntizga kirib olib beriladi:</b>\n
-<b>1 oylik telegram premium:</b><i>52000 Uzs</i>\n
-<b>12 oylik telegram premium:</b><i>299000 Uzs</i>\n
+<b>1 oylik telegram premium:</b><i> 52000 Uzs</i>\n
+<b>12 oylik telegram premium:</b><i> 299000 Uzs</i>\n
 \n
 <b>Telegram akkauntizga kirmasdan olib beriladi:</b>\n
-<b>3 oylik telegram premium:</b><i>189000 Uzs</i>\n
-<b>6 oylik telegram premium:</b><i>239000 Uzs</i>\n
-<b>12 oylik telegram premium:</b><i>399000 Uzs</i>\n
+<b>3 oylik telegram premium:</b><i> 189000 Uzs</i>\n
+<b>6 oylik telegram premium:</b><i> 239000 Uzs</i>\n
+<b>12 oylik telegram premium:</b><i> 399000 Uzs</i>\n
 \n
 <b>Narxlar ma'qul kelgan bo'lsa adminlar:</b>\n
 <b>Admin 1 </b> @Nufada\n
@@ -39,19 +38,19 @@ async def message_answers(message: types.Message):
         await message.answer(text=message_answer,parse_mode="HTML")
 
     
-    elif message.text == "Referral tizimi ⋔":
+    elif message.text == "Referral tizimi 🫱🏼‍🫲🏽":
         user_id = message.from_user.id
         await message.answer(text=f"<b>Sizning referral link :</b>\n <code>https://t.me/Premium_duo_robot?start={user_id}</code>", reply_markup=referral_blrd_kb)
 
 
     elif message.text == "Adminlar 👥" :
         if message.from_user.id in Admin_Id:
-            await message.answer("Admin bo'limida man bilan mani beatifulll bro imga kirishga ruhsat berilgan.Agar yana adminlar qo'shilgan bo'lsa quyidagi bo'limlardan biriga kirishiz mumkin:",reply_markup=admin_menu_kb)
+            await message.answer("<b>Admin bo'limida man bilan mani beatifulll bro imga kirishga ruhsat berilgan.</b><i>Agar yana adminlar qo'shilgan bo'lsa quyidagi bo'limlardan biriga kirishiz mumkin:</i>",reply_markup=admin_menu_kb)
         else:
             await message.answer(f"<b>Bizning adminlar</b>:\n<b>Azimov:</b> @Nufada\nᅠᅠᅠᅠᅠᅠᅠᅠᅠᅠ: @Cns_cewr")
     
     elif message.text == "Profil 👤" :
-        await message.answer(f"Profil bo'limiga hush kelibsiz.\nPastdagi tugmalardan kerakligini tanlashiz mumkin",reply_markup=user_profile_kb)
+        await message.answer(f"<b>Profil bo'limiga hush kelibsiz.\nPastdagi tugmalardan kerakligini tanlashiz mumkin</b>",reply_markup=user_profile_kb)
 
 # ro'yhatdan o'tkazish
 async def registration(message: types.Message,state: FSMContext):
@@ -59,30 +58,41 @@ async def registration(message: types.Message,state: FSMContext):
     UZ_PHONE_REGEX = r"^998\d{9}$"
     if message.contact is not None:
         user_id = message.from_user.id
-        data = await state.get_data()
         try:
-            referrer_id = int(data.get('name')[0])
-        except IndexError:
+            referrer_id = referral_link.get_user_referrer(user_id)[0]
+        except:
             referrer_id = None
         phone_number = message.contact.phone_number
         if referrer_id == None:
-            referral_link.add_user(user_id)
+            if referral_link.check_is_sub(user_id):
+                referral_link.referrar_id_activating(user_id)
+                referral_link.add_points(referrer_id, 3)
             await message.answer(f"Siz muvaffaqiyatli ro'yhatdan o'tdingiz",reply_markup=main_keyboard())
+            await state.clear()
+        elif referrer_id==user_id:
+            if referral_link.check_is_sub(user_id):
+                referral_link.referrar_id_activating(user_id)
+            if referral_link.check_all(user_id):
+                referral_link.add_points(referrer_id, 0)
+            await message.answer(f"O'zingizni taklif qilishingiz mumkin emas",reply_markup=main_keyboard())
             await state.clear()
         else:
             if re.match(UZ_PHONE_REGEX,phone_number):
-                referral_link.add_user(user_id)
-                referral_link.add_points(referrer_id, 3)
+                if referral_link.check_is_sub(user_id):
+                    referral_link.referrar_id_activating(user_id)
+                    referral_link.add_points(referrer_id, 3)
                 user = await bot.get_chat(referrer_id)
-                rr_user = user.username or referrer_id
-                await message.answer(f"Siz muvaffaqiyatli ro'yhatdan o'tdingiz va sizni chaqirgan inson @{rr_user}",reply_markup=main_keyboard())
+                rr_user = f"@{user.username}" or referrer_id
+                await message.answer(f"Siz muvaffaqiyatli ro'yhatdan o'tdingiz va sizni chaqirgan inson: {rr_user}",reply_markup=main_keyboard())
                 await state.clear()
             else:
-                referral_link.add_user(user_id,referrer_id)
-                referral_link.add_points(referrer_id, 0)
+                if referral_link.check_is_sub(user_id):
+                    referral_link.referrar_id_activating(user_id)
+                    referral_link.add_points(referrer_id,1)
+
                 user = await bot.get_chat(referrer_id)
-                rr_user = user.username or referrer_id
-                await message.answer(f"{phone_number}Sizning telefon raqamingiz Uzbekistan davlatiga tegishli emasligi uchun biz sizni referraringizga sizni taklif qilgani uchun point bermaymiz.Buning sababi botda qoida buzarlik yo'llar bilan odam ko'paytirib tashlashni oldini olish uchun.\nSizning referraringiz: @{rr_user}",reply_markup=main_keyboard())
+                rr_user = f"@{user.username}" or referrer_id
+                await message.answer(f"Sizning telefon raqamingiz Uzbekistan davlatiga tegishli emasligi uchun biz sizni referraringizga sizni taklif qilgani uchun point bermaymiz.Buning sababi botda qoida buzarlik yo'llar bilan odam ko'paytirib tashlashni oldini olish uchun.\nSizning referraringiz: {rr_user}",reply_markup=main_keyboard())
                 await state.clear()
     else:
         await message.answer(f"Telefon raqamni qabul qilishda muammo yuz berdi")

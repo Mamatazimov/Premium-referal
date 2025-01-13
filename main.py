@@ -11,6 +11,8 @@ from config import Bot_Token, Admin_Id
 from handlers import register_handlers
 from database.db import init_db
 
+logging.basicConfig(level=logging.INFO, filename='logs/bot.log', filemode='a',
+                    format='%(asctime)s - %(name)s - %(levelname)s - %(message)s')
 
 
 dp = Dispatcher()
@@ -19,6 +21,7 @@ init_db()
 register_handlers(dp)
 
 
+logging.info("Bot ishga tushdi")
 
 
 
@@ -26,6 +29,9 @@ register_handlers(dp)
 
 
 if __name__ == "__main__":
-    dp.run_polling(bot, skip_updates=True)
+    try:
+        dp.run_polling(bot, skip_updates=True)
+    except Exception as e:
+        logging.error(f"Bot ishlashida xato: {e}")
 
 
