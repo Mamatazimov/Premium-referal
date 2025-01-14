@@ -114,8 +114,8 @@ async def profile_menu(callback_query: types.CallbackQuery):
 async def give_promo(callback_query: types.CallbackQuery):
     user_id = callback_query.from_user.id
 
-    promo = create_promo_code(user_id=user_id,required_points=2)
-    if promo:
+    promo = create_promo_code(user_id=user_id,required_points=100)
+    if promo and promo!=1:
         await callback_query.message.answer(f"<code>{promo}</code>")
     else:
         await callback_query.message.edit_text(f"Sizning pointingiz promo-codega yetmaydi!")

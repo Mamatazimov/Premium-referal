@@ -1,0 +1,15 @@
+# Python cache files
+__pycache__/
+*.py[cod]
+
+# Environment variables
+.env
+
+# Config files
+config.py
+
+# Log files
+*.log
+
+# Virtual environment
+venv/

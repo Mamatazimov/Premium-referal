@@ -66,7 +66,7 @@ async def registration(message: types.Message,state: FSMContext):
         if referrer_id == None:
             if referral_link.check_is_sub(user_id):
                 referral_link.referrar_id_activating(user_id)
-                referral_link.add_points(referrer_id, 3)
+                referral_link.add_points(referrer_id, 0)
             await message.answer(f"Siz muvaffaqiyatli ro'yhatdan o'tdingiz",reply_markup=main_keyboard())
             await state.clear()
         elif referrer_id==user_id:
@@ -80,7 +80,7 @@ async def registration(message: types.Message,state: FSMContext):
             if re.match(UZ_PHONE_REGEX,phone_number):
                 if referral_link.check_is_sub(user_id):
                     referral_link.referrar_id_activating(user_id)
-                    referral_link.add_points(referrer_id, 3)
+                    referral_link.add_points(referrer_id, 1)
                 user = await bot.get_chat(referrer_id)
                 rr_user = f"@{user.username}" or referrer_id
                 await message.answer(f"Siz muvaffaqiyatli ro'yhatdan o'tdingiz va sizni chaqirgan inson: {rr_user}",reply_markup=main_keyboard())
@@ -88,7 +88,7 @@ async def registration(message: types.Message,state: FSMContext):
             else:
                 if referral_link.check_is_sub(user_id):
                     referral_link.referrar_id_activating(user_id)
-                    referral_link.add_points(referrer_id,1)
+                    referral_link.add_points(referrer_id,0)
 
                 user = await bot.get_chat(referrer_id)
                 rr_user = f"@{user.username}" or referrer_id
