@@ -13,3 +13,5 @@ config.py
 
 # Virtual environment
 venv/
+# Database files
+*.db
