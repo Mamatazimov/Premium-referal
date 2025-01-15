@@ -41,7 +41,10 @@ admin_menu.row(
 )
 admin_menu.row(
     InlineKeyboardButton(text="Statistika",callback_data="stat_admin_menu"),
-    InlineKeyboardButton(text="Majburiy kanal obunasi",callback_data="mandatory_subscription")
+    InlineKeyboardButton(text="Majburiy kanal obunasi",callback_data="mandatory_subscription"),
+)
+admin_menu.row(
+    InlineKeyboardButton(text="Referrarga +5point",callback_data="add_point_rr"),
 )
 admin_menu_kb = admin_menu.as_markup()
 

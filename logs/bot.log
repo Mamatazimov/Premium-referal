@@ -1,0 +1,99 @@
+2025-01-15 19:53:12,053 - root - INFO - Bot ishga tushdi
+2025-01-15 19:53:12,055 - aiogram.dispatcher - INFO - Start polling
+2025-01-15 19:53:15,316 - aiogram.dispatcher - INFO - Run polling for bot @yuklovchilik_robot id=8174394215 - 'Yuklovchi'
+2025-01-15 19:53:17,237 - aiogram.event - INFO - Update id=908347844 is handled. Duration 906 ms by bot id=8174394215
+2025-01-15 19:53:21,022 - aiogram.event - INFO - Update id=908347845 is handled. Duration 327 ms by bot id=8174394215
+2025-01-15 19:53:23,984 - aiogram.event - INFO - Update id=908347846 is handled. Duration 359 ms by bot id=8174394215
+2025-01-15 19:53:35,511 - aiogram.dispatcher - INFO - Polling stopped
+2025-01-15 19:53:35,763 - aiogram.dispatcher - INFO - Polling stopped for bot @yuklovchilik_robot id=8174394215 - 'Yuklovchi'
+2025-01-15 23:21:57,079 - root - INFO - Bot ishga tushdi
+2025-01-15 23:21:57,084 - aiogram.dispatcher - INFO - Start polling
+2025-01-15 23:21:57,937 - aiogram.dispatcher - INFO - Run polling for bot @yuklovchilik_robot id=8174394215 - 'Yuklovchi'
+2025-01-15 23:22:20,173 - root - INFO - Bot ishga tushdi
+2025-01-15 23:22:21,346 - aiogram.event - INFO - Update id=908347847 is handled. Duration 1577 ms by bot id=8174394215
+2025-01-15 23:22:48,857 - aiogram.event - INFO - Update id=908347848 is handled. Duration 797 ms by bot id=8174394215
+2025-01-15 23:23:00,006 - aiogram.event - INFO - Update id=908347849 is handled. Duration 311 ms by bot id=8174394215
+2025-01-15 23:24:00,144 - aiogram.dispatcher - INFO - Polling stopped
+2025-01-15 23:24:00,397 - aiogram.dispatcher - INFO - Polling stopped for bot @yuklovchilik_robot id=8174394215 - 'Yuklovchi'
+2025-01-15 23:34:07,811 - root - INFO - Bot ishga tushdi
+2025-01-15 23:34:07,811 - aiogram.dispatcher - INFO - Start polling
+2025-01-15 23:34:08,669 - aiogram.dispatcher - INFO - Run polling for bot @yuklovchilik_robot id=8174394215 - 'Yuklovchi'
+2025-01-15 23:39:15,251 - aiogram.event - INFO - Update id=908347850 is handled. Duration 1655 ms by bot id=8174394215
+2025-01-15 23:39:26,646 - aiogram.dispatcher - INFO - Polling stopped
+2025-01-15 23:39:26,899 - aiogram.dispatcher - INFO - Polling stopped for bot @yuklovchilik_robot id=8174394215 - 'Yuklovchi'
+2025-01-16 00:03:42,698 - root - INFO - Bot ishga tushdi
+2025-01-16 00:03:42,699 - aiogram.dispatcher - INFO - Start polling
+2025-01-16 00:03:44,661 - aiogram.dispatcher - INFO - Run polling for bot @yuklovchilik_robot id=8174394215 - 'Yuklovchi'
+2025-01-16 00:09:15,851 - aiogram.event - INFO - Update id=908347851 is handled. Duration 938 ms by bot id=8174394215
+2025-01-16 00:10:46,294 - aiogram.event - INFO - Update id=908347852 is handled. Duration 1092 ms by bot id=8174394215
+2025-01-16 00:11:29,329 - aiogram.event - INFO - Update id=908347853 is handled. Duration 1125 ms by bot id=8174394215
+2025-01-16 00:11:31,155 - aiogram.event - INFO - Update id=908347854 is handled. Duration 420 ms by bot id=8174394215
+2025-01-16 00:11:34,132 - aiogram.event - INFO - Update id=908347855 is handled. Duration 296 ms by bot id=8174394215
+2025-01-16 00:17:43,982 - aiogram.dispatcher - INFO - Polling stopped
+2025-01-16 00:17:44,023 - aiogram.dispatcher - ERROR - Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientOSError: [Errno 1] [SSL: APPLICATION_DATA_AFTER_CLOSE_NOTIFY] application data after close notify (_ssl.c:2685)
+2025-01-16 00:17:44,024 - aiogram.dispatcher - WARNING - Sleep for 1.000000 seconds and try again... (tryings = 0, bot id = 8174394215)
+2025-01-16 00:17:44,245 - aiogram.dispatcher - INFO - Polling stopped for bot @yuklovchilik_robot id=8174394215 - 'Yuklovchi'
+2025-01-16 00:21:17,687 - root - INFO - Bot ishga tushdi
+2025-01-16 00:21:17,689 - aiogram.dispatcher - INFO - Start polling
+2025-01-16 00:21:18,529 - aiogram.dispatcher - INFO - Run polling for bot @yuklovchilik_robot id=8174394215 - 'Yuklovchi'
+2025-01-16 00:21:25,251 - aiogram.event - INFO - Update id=908347856 is handled. Duration 921 ms by bot id=8174394215
+2025-01-16 00:21:27,266 - aiogram.event - INFO - Update id=908347857 is handled. Duration 515 ms by bot id=8174394215
+2025-01-16 00:21:30,829 - aiogram.event - INFO - Update id=908347858 is handled. Duration 453 ms by bot id=8174394215
+2025-01-16 00:22:21,746 - aiogram.event - INFO - Update id=908347859 is handled. Duration 2204 ms by bot id=8174394215
+2025-01-16 00:22:48,645 - aiogram.event - INFO - Update id=908347860 is not handled. Duration 0 ms by bot id=8174394215
+2025-01-16 00:22:48,645 - aiogram.event - ERROR - Cause exception while process update id=908347860 by bot id=8174394215
+TypeError: 'NoneType' object is not subscriptable
+Traceback (most recent call last):
+  File "C:\Users\user\AppData\Local\Programs\Python\Python312\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 309, in _process_update
+    response = await self.feed_update(bot, update, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\AppData\Local\Programs\Python\Python312\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 158, in feed_update
+    response = await self.update.wrap_outer_middleware(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\AppData\Local\Programs\Python\Python312\Lib\site-packages\aiogram\dispatcher\middlewares\error.py", line 25, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\AppData\Local\Programs\Python\Python312\Lib\site-packages\aiogram\dispatcher\middlewares\user_context.py", line 56, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\AppData\Local\Programs\Python\Python312\Lib\site-packages\aiogram\fsm\middleware.py", line 42, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\AppData\Local\Programs\Python\Python312\Lib\site-packages\aiogram\dispatcher\event\telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\AppData\Local\Programs\Python\Python312\Lib\site-packages\aiogram\dispatcher\event\handler.py", line 43, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\user\AppData\Local\Programs\Python\Python312\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 276, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\AppData\Local\Programs\Python\Python312\Lib\site-packages\aiogram\dispatcher\router.py", line 142, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\AppData\Local\Programs\Python\Python312\Lib\site-packages\aiogram\dispatcher\router.py", line 137, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\AppData\Local\Programs\Python\Python312\Lib\site-packages\aiogram\dispatcher\router.py", line 162, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\AppData\Local\Programs\Python\Python312\Lib\site-packages\aiogram\dispatcher\event\telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\AppData\Local\Programs\Python\Python312\Lib\site-packages\aiogram\dispatcher\event\handler.py", line 43, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "c:\Users\user\Documents\GitHub\Premium-referal\handlers\messages.py", line 177, in add_point_refr_msg
+    referrar_id = referral_link.get_user_referrer(user_id)[0]
+                  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^
+TypeError: 'NoneType' object is not subscriptable
+2025-01-16 00:23:08,915 - root - INFO - Bot ishga tushdi
+2025-01-16 00:23:09,881 - aiogram.event - INFO - Update id=908347861 is handled. Duration 1250 ms by bot id=8174394215
+2025-01-16 00:23:13,667 - aiogram.event - INFO - Update id=908347862 is handled. Duration 1625 ms by bot id=8174394215
+2025-01-16 00:24:23,653 - aiogram.event - INFO - Update id=908347863 is handled. Duration 1360 ms by bot id=8174394215
+2025-01-16 00:24:26,380 - aiogram.event - INFO - Update id=908347864 is handled. Duration 639 ms by bot id=8174394215
+2025-01-16 00:24:43,527 - aiogram.event - INFO - Update id=908347865 is handled. Duration 1000 ms by bot id=8174394215
+2025-01-16 00:25:00,585 - aiogram.dispatcher - INFO - Polling stopped
+2025-01-16 00:25:00,828 - aiogram.dispatcher - INFO - Polling stopped for bot @yuklovchilik_robot id=8174394215 - 'Yuklovchi'
+2025-01-16 00:25:00,905 - asyncio - ERROR - Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x000001E954AA95B0>

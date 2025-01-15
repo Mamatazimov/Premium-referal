@@ -170,7 +170,22 @@ async def rem_channel_msg(message: types.Message,state: FSMContext):
         await message.answer(f"O'chiradigan kanal idsi yo'q :")
     await state.clear()
 
+# referrarga 5point qo'shuv xabari
+async def add_point_refr_msg(message: types.Message,state:FSMContext):
+    user_id = message.text
+    try:
+        referrar_id = referral_link.get_user_referrer(user_id)[0]
+        if referrar_id == None:
+            await message.answer("Foydalanuvchi referrari topilmadi")
+        else:
+            if user_id == referrar_id:
+                await message.answer("User o'zini o'zi referrar qilgani uchun point qo'shilmadi")
+            else:
+                referral_link.add_points(referrar_id,5)
+                await message.answer("Userning referrariga muaffaqiyatli 5point qo'shildi")
 
+    except IndexError:
+        await message.answer("Foydalanuvchi referrari topilmadi")
 
     
     

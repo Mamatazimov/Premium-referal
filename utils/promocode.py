@@ -31,7 +31,7 @@ def create_promo_code(user_id,required_points):
         return promo_code
     else:
         conn.close()
-        return result
+        return None
 
 #promo codeni tekshirish
 def get_promo_code(user_id):

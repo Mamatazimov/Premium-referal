@@ -22,6 +22,8 @@ class Channels(StatesGroup):
     waiting_for_channel_id1 = State()  
     waiting_for_channel_id2 = State()  
 
+class Add_points_rr(StatesGroup):
+    waiting_for_user_id = State()
 
 
 # foydalanuvchining referral pointlari va referallari bo'limi uchun funksiya
@@ -115,7 +117,7 @@ async def give_promo(callback_query: types.CallbackQuery):
     user_id = callback_query.from_user.id
 
     promo = create_promo_code(user_id=user_id,required_points=100)
-    if promo and promo!=1:
+    if promo:
         await callback_query.message.answer(f"<code>{promo}</code>")
     else:
         await callback_query.message.edit_text(f"Sizning pointingiz promo-codega yetmaydi!")
@@ -165,5 +167,10 @@ async def add_channel_cq(cq: types.CallbackQuery,state:FSMContext):
 async def rem_channel_cq(cq: types.CallbackQuery,state:FSMContext):
     await cq.message.answer("O'chirmoqchi bo'lgan kanalingni id sini tashlang.\nQaysi adminsan bilmeman lekin tugmala bilan o'ynama.")
     await state.set_state(Channels.waiting_for_channel_id2)
+
+# referrarga point qo'shish
+async def add_point_refr(cq: types.CallbackQuery,state:FSMContext):
+    await cq.message.answer("Foydalanuvchi id sini tashlang:")
+    await state.set_state(Add_points_rr.waiting_for_user_id)
 
 
