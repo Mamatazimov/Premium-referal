@@ -126,7 +126,7 @@ async def give_promo(callback_query: types.CallbackQuery):
 
 # promo-codelar haqida malumot beruvchi funksiya
 async def promo_info(cq: types.CallbackQuery):
-    promo_info_txt = "<b>Sizga promo-codelar haqida ma'lumot bermoqchiman.</b>\n\n<i>Siz botga o'z referrallaringizni chaqirib har bir referral uchun 1 pointdan olishingiz mumkin.\n\nSiz pointlaringizni 100 taga yetganda promo-codega aylantirib olishingiz mumkin, va adminlardan biriga tashlab bersangiz ular sizga 1oylik telegram premiumni tekinga olib berishadi.</i>"
+    promo_info_txt = "<b>Sizga promo-codelar haqida ma'lumot bermoqchiman.</b>\n\n<i>Siz botga o'z referrallaringizni chaqirib har bir referral uchun 1 pointdan, agar referrallaringiz bizdan premium sotib olishsa ularning har biridan 5 pointdan  olishingiz mumkin.\n\nSiz pointlaringizni 100 taga yetganda promo-codega aylantirib olishingiz mumkin, va adminlardan biriga tashlab bersangiz ular sizga 1oylik telegram premiumni tekinga olib berishadi.</i>"
     await cq.message.edit_text(promo_info_txt)
 
 # admin user_idni jo'natishi uchun so'rov
