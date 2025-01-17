@@ -25,6 +25,8 @@ class Channels(StatesGroup):
 class Add_points_rr(StatesGroup):
     waiting_for_user_id = State()
 
+class Send_msg_all(StatesGroup):
+    waiting_for_message = State()
 
 # foydalanuvchining referral pointlari va referallari bo'limi uchun funksiya
 async def referrallarim(callback_query: types.CallbackQuery):
@@ -172,5 +174,10 @@ async def rem_channel_cq(cq: types.CallbackQuery,state:FSMContext):
 async def add_point_refr(cq: types.CallbackQuery,state:FSMContext):
     await cq.message.answer("Foydalanuvchi id sini tashlang:")
     await state.set_state(Add_points_rr.waiting_for_user_id)
+
+# Barchaga habar jo'natish 1-boshqish
+async def send_message_all_admin(cq: types.CallbackQuery,state:FSMContext):
+    await cq.message.answer("Xabar matnini tashlang")
+    await state.set_state(Send_msg_all.waiting_for_message)
 
 

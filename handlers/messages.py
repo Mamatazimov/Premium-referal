@@ -187,6 +187,21 @@ async def add_point_refr_msg(message: types.Message,state:FSMContext):
     except IndexError:
         await message.answer("Foydalanuvchi referrari topilmadi")
 
-    
+# Barchaga habar jo'natish
+async def send_message_all(message: types.Message,state: FSMContext):
+    from main import bot
+    users = referral_link.get_all_user()
+    msg = message.text
+    block_users=0
+    all_user=0
+    for user in users:
+        try:
+            await bot.send_message(user[0], msg)
+            all_user+=1
+        except Exception as e:
+            block_users+=1
+    await message.answer(f"Xabar yuborilgan foydalanuvchilar: {all_user}\nXabar yuborilmagan foydalanuvchilar: {block_users}")
+
+
     
 #caption

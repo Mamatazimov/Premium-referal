@@ -45,6 +45,7 @@ admin_menu.row(
 )
 admin_menu.row(
     InlineKeyboardButton(text="Referrarga +5point",callback_data="add_point_rr"),
+    InlineKeyboardButton(text="Barchaga xabar jo'natish",callback_data="send_to_all_users")
 )
 admin_menu_kb = admin_menu.as_markup()
 

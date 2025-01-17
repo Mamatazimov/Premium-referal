@@ -184,4 +184,11 @@ def check_all(user_id):
     else:
         return 0
 
+def get_all_user():
+    conn = sqlite3.connect("referral.db")
+    cursor = conn.cursor()
 
+    cursor.execute("SELECT user_id FROM users")
+    result = cursor.fetchall()
+    conn.close()
+    return result if result else None
