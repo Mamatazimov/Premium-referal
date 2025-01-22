@@ -1,0 +1,239 @@
+2025-01-17 22:26:56,888 - root - INFO - Bot ishga tushdi
+2025-01-17 22:26:56,891 - aiogram.dispatcher - INFO - Start polling
+2025-01-17 22:26:57,402 - aiogram.dispatcher - INFO - Run polling for bot @yuklovchilik_robot id=8174394215 - 'Yuklovchi'
+2025-01-17 22:27:18,510 - root - INFO - Bot ishga tushdi
+2025-01-17 22:27:19,210 - aiogram.event - INFO - Update id=908347878 is handled. Duration 1000 ms by bot id=8174394215
+2025-01-17 22:27:29,486 - aiogram.event - INFO - Update id=908347879 is handled. Duration 797 ms by bot id=8174394215
+2025-01-22 13:36:10,787 - root - INFO - Bot ishga tushdi
+2025-01-22 13:36:10,832 - aiogram.dispatcher - INFO - Start polling
+2025-01-22 13:36:11,831 - aiogram.dispatcher - INFO - Run polling for bot @yuklovchilik_robot id=8174394215 - 'Yuklovchi'
+2025-01-22 13:37:47,123 - root - INFO - Bot ishga tushdi
+2025-01-22 13:37:48,492 - aiogram.event - INFO - Update id=908347880 is handled. Duration 1952 ms by bot id=8174394215
+2025-01-22 13:37:51,877 - aiogram.event - INFO - Update id=908347881 is handled. Duration 218 ms by bot id=8174394215
+2025-01-22 13:37:53,949 - aiogram.event - INFO - Update id=908347882 is handled. Duration 891 ms by bot id=8174394215
+2025-01-22 13:37:56,616 - aiogram.event - INFO - Update id=908347883 is handled. Duration 187 ms by bot id=8174394215
+2025-01-22 13:37:58,967 - aiogram.event - INFO - Update id=908347884 is handled. Duration 484 ms by bot id=8174394215
+2025-01-22 13:38:07,102 - aiogram.event - INFO - Update id=908347885 is handled. Duration 859 ms by bot id=8174394215
+2025-01-22 13:38:09,923 - aiogram.event - INFO - Update id=908347886 is handled. Duration 187 ms by bot id=8174394215
+2025-01-22 13:38:11,888 - aiogram.event - INFO - Update id=908347887 is handled. Duration 342 ms by bot id=8174394215
+2025-01-22 13:38:13,426 - aiogram.event - INFO - Update id=908347888 is handled. Duration 202 ms by bot id=8174394215
+2025-01-22 13:44:26,527 - aiogram.dispatcher - INFO - Polling stopped
+2025-01-22 13:44:26,784 - aiogram.dispatcher - INFO - Polling stopped for bot @yuklovchilik_robot id=8174394215 - 'Yuklovchi'
+2025-01-22 13:44:26,869 - asyncio - ERROR - Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x0000012FC5DC9E80>
+2025-01-22 13:44:37,470 - root - INFO - Bot ishga tushdi
+2025-01-22 13:44:37,472 - aiogram.dispatcher - INFO - Start polling
+2025-01-22 13:44:38,490 - aiogram.dispatcher - INFO - Run polling for bot @yuklovchilik_robot id=8174394215 - 'Yuklovchi'
+2025-01-22 13:44:38,663 - aiogram.event - INFO - Update id=908347889 is not handled. Duration 0 ms by bot id=8174394215
+2025-01-22 13:44:43,869 - root - INFO - Bot ishga tushdi
+2025-01-22 13:44:44,379 - aiogram.event - INFO - Update id=908347890 is handled. Duration 1108 ms by bot id=8174394215
+2025-01-22 13:44:46,848 - aiogram.event - INFO - Update id=908347891 is handled. Duration 187 ms by bot id=8174394215
+2025-01-22 13:44:54,782 - aiogram.event - INFO - Update id=908347892 is not handled. Duration 0 ms by bot id=8174394215
+2025-01-22 13:45:01,853 - aiogram.dispatcher - INFO - Polling stopped
+2025-01-22 13:45:02,109 - aiogram.dispatcher - INFO - Polling stopped for bot @yuklovchilik_robot id=8174394215 - 'Yuklovchi'
+2025-01-22 14:04:44,882 - root - INFO - Bot ishga tushdi
+2025-01-22 14:04:44,884 - aiogram.dispatcher - INFO - Start polling
+2025-01-22 14:04:45,917 - aiogram.dispatcher - INFO - Run polling for bot @yuklovchilik_robot id=8174394215 - 'Yuklovchi'
+2025-01-22 14:04:46,568 - root - INFO - Bot ishga tushdi
+2025-01-22 14:04:47,183 - aiogram.event - INFO - Update id=908347893 is handled. Duration 1108 ms by bot id=8174394215
+2025-01-22 14:04:49,012 - aiogram.event - INFO - Update id=908347894 is handled. Duration 233 ms by bot id=8174394215
+2025-01-22 14:04:52,802 - aiogram.event - INFO - Update id=908347895 is handled. Duration 1077 ms by bot id=8174394215
+2025-01-22 14:05:03,224 - aiogram.event - INFO - Update id=908347896 is not handled. Duration 15 ms by bot id=8174394215
+2025-01-22 14:05:04,779 - aiogram.event - INFO - Update id=908347897 is not handled. Duration 0 ms by bot id=8174394215
+2025-01-22 14:05:07,776 - aiogram.event - INFO - Update id=908347898 is handled. Duration 891 ms by bot id=8174394215
+2025-01-22 14:05:09,415 - aiogram.event - INFO - Update id=908347899 is handled. Duration 312 ms by bot id=8174394215
+2025-01-22 14:05:14,912 - aiogram.event - INFO - Update id=908347900 is not handled. Duration 16 ms by bot id=8174394215
+2025-01-22 14:05:15,828 - aiogram.event - INFO - Update id=908347901 is not handled. Duration 0 ms by bot id=8174394215
+2025-01-22 14:05:20,347 - aiogram.dispatcher - INFO - Polling stopped
+2025-01-22 14:05:20,600 - aiogram.dispatcher - INFO - Polling stopped for bot @yuklovchilik_robot id=8174394215 - 'Yuklovchi'
+2025-01-22 14:39:45,525 - root - INFO - Bot ishga tushdi
+2025-01-22 14:39:45,530 - aiogram.dispatcher - INFO - Start polling
+2025-01-22 14:39:46,553 - aiogram.dispatcher - INFO - Run polling for bot @yuklovchilik_robot id=8174394215 - 'Yuklovchi'
+2025-01-22 14:40:22,155 - aiogram.event - INFO - Update id=908347902 is handled. Duration 469 ms by bot id=8174394215
+2025-01-22 14:40:24,703 - aiogram.event - INFO - Update id=908347903 is handled. Duration 250 ms by bot id=8174394215
+2025-01-22 14:40:26,053 - aiogram.event - INFO - Update id=908347904 is not handled. Duration 14 ms by bot id=8174394215
+2025-01-22 15:08:48,541 - aiogram.dispatcher - ERROR - Failed to fetch updates - TelegramNetworkError: HTTP Client says - Request timeout error
+2025-01-22 15:08:48,541 - aiogram.dispatcher - WARNING - Sleep for 1.000000 seconds and try again... (tryings = 0, bot id = 8174394215)
+2025-01-22 15:08:49,573 - aiogram.dispatcher - ERROR - Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientConnectorError: Cannot connect to host api.telegram.org:443 ssl:default [Сетевая папка недоступна. За информацией о разрешении проблем в сети обратитесь к справочной системе Windows]
+2025-01-22 15:08:49,573 - aiogram.dispatcher - WARNING - Sleep for 1.040195 seconds and try again... (tryings = 1, bot id = 8174394215)
+2025-01-22 15:08:50,616 - aiogram.dispatcher - ERROR - Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientConnectorError: Cannot connect to host api.telegram.org:443 ssl:default [Сетевая папка недоступна. За информацией о разрешении проблем в сети обратитесь к справочной системе Windows]
+2025-01-22 15:08:50,617 - aiogram.dispatcher - WARNING - Sleep for 1.332185 seconds and try again... (tryings = 2, bot id = 8174394215)
+2025-01-22 15:09:03,253 - aiogram.dispatcher - INFO - Connection established (tryings = 3, bot id = 8174394215)
+2025-01-22 15:11:13,695 - aiogram.dispatcher - INFO - Polling stopped
+2025-01-22 15:11:13,951 - aiogram.dispatcher - INFO - Polling stopped for bot @yuklovchilik_robot id=8174394215 - 'Yuklovchi'
+2025-01-22 15:11:23,794 - root - INFO - Bot ishga tushdi
+2025-01-22 15:11:23,797 - aiogram.dispatcher - INFO - Start polling
+2025-01-22 15:11:26,638 - aiogram.dispatcher - INFO - Run polling for bot @yuklovchilik_robot id=8174394215 - 'Yuklovchi'
+2025-01-22 15:12:00,456 - aiogram.event - INFO - Update id=908347905 is handled. Duration 500 ms by bot id=8174394215
+2025-01-22 15:12:03,917 - aiogram.event - INFO - Update id=908347906 is handled. Duration 391 ms by bot id=8174394215
+2025-01-22 15:12:05,881 - aiogram.event - INFO - Update id=908347907 is handled. Duration 546 ms by bot id=8174394215
+2025-01-22 15:14:31,344 - aiogram.dispatcher - INFO - Polling stopped
+2025-01-22 15:14:31,595 - aiogram.dispatcher - INFO - Polling stopped for bot @yuklovchilik_robot id=8174394215 - 'Yuklovchi'
+2025-01-22 15:21:13,800 - root - INFO - Bot ishga tushdi
+2025-01-22 15:21:13,802 - aiogram.dispatcher - INFO - Start polling
+2025-01-22 15:21:14,728 - aiogram.dispatcher - INFO - Run polling for bot @yuklovchilik_robot id=8174394215 - 'Yuklovchi'
+2025-01-22 15:21:18,937 - aiogram.event - INFO - Update id=908347908 is handled. Duration 3952 ms by bot id=8174394215
+2025-01-22 15:21:21,625 - aiogram.event - INFO - Update id=908347909 is handled. Duration 296 ms by bot id=8174394215
+2025-01-22 15:21:24,391 - aiogram.event - INFO - Update id=908347910 is not handled. Duration 0 ms by bot id=8174394215
+2025-01-22 15:23:36,632 - aiogram.dispatcher - INFO - Polling stopped
+2025-01-22 15:23:36,883 - aiogram.dispatcher - INFO - Polling stopped for bot @yuklovchilik_robot id=8174394215 - 'Yuklovchi'
+2025-01-22 15:23:43,976 - root - INFO - Bot ishga tushdi
+2025-01-22 15:23:43,978 - aiogram.dispatcher - INFO - Start polling
+2025-01-22 15:23:45,488 - aiogram.dispatcher - INFO - Run polling for bot @yuklovchilik_robot id=8174394215 - 'Yuklovchi'
+2025-01-22 15:23:47,518 - aiogram.event - INFO - Update id=908347911 is handled. Duration 1405 ms by bot id=8174394215
+2025-01-22 15:24:17,180 - aiogram.dispatcher - INFO - Polling stopped
+2025-01-22 15:24:17,326 - aiogram.dispatcher - ERROR - Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientOSError: [Errno 1] [SSL: APPLICATION_DATA_AFTER_CLOSE_NOTIFY] application data after close notify (_ssl.c:2685)
+2025-01-22 15:24:17,326 - aiogram.dispatcher - WARNING - Sleep for 1.000000 seconds and try again... (tryings = 0, bot id = 8174394215)
+2025-01-22 15:24:17,441 - aiogram.dispatcher - INFO - Polling stopped for bot @yuklovchilik_robot id=8174394215 - 'Yuklovchi'
+2025-01-22 15:24:25,392 - root - INFO - Bot ishga tushdi
+2025-01-22 15:24:25,394 - aiogram.dispatcher - INFO - Start polling
+2025-01-22 15:24:26,232 - aiogram.dispatcher - INFO - Run polling for bot @yuklovchilik_robot id=8174394215 - 'Yuklovchi'
+2025-01-22 15:24:27,734 - aiogram.event - INFO - Update id=908347912 is handled. Duration 1312 ms by bot id=8174394215
+2025-01-22 15:24:30,790 - aiogram.event - INFO - Update id=908347913 is handled. Duration 875 ms by bot id=8174394215
+2025-01-22 15:24:32,763 - aiogram.event - INFO - Update id=908347914 is handled. Duration 375 ms by bot id=8174394215
+2025-01-22 15:55:42,537 - aiogram.dispatcher - ERROR - Failed to fetch updates - TelegramNetworkError: HTTP Client says - Request timeout error
+2025-01-22 15:55:42,552 - aiogram.dispatcher - WARNING - Sleep for 1.000000 seconds and try again... (tryings = 0, bot id = 8174394215)
+2025-01-22 15:55:43,553 - aiogram.dispatcher - ERROR - Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientConnectorError: Cannot connect to host api.telegram.org:443 ssl:default [Сетевая папка недоступна. За информацией о разрешении проблем в сети обратитесь к справочной системе Windows]
+2025-01-22 15:55:43,553 - aiogram.dispatcher - WARNING - Sleep for 1.330763 seconds and try again... (tryings = 1, bot id = 8174394215)
+2025-01-22 15:55:44,885 - aiogram.dispatcher - ERROR - Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientConnectorError: Cannot connect to host api.telegram.org:443 ssl:default [Сетевая папка недоступна. За информацией о разрешении проблем в сети обратитесь к справочной системе Windows]
+2025-01-22 15:55:44,885 - aiogram.dispatcher - WARNING - Sleep for 1.663370 seconds and try again... (tryings = 2, bot id = 8174394215)
+2025-01-22 16:19:32,762 - aiogram.dispatcher - ERROR - Failed to fetch updates - TelegramNetworkError: HTTP Client says - Request timeout error
+2025-01-22 16:19:32,762 - aiogram.dispatcher - WARNING - Sleep for 2.420778 seconds and try again... (tryings = 3, bot id = 8174394215)
+2025-01-22 16:19:35,185 - aiogram.dispatcher - ERROR - Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientConnectorError: Cannot connect to host api.telegram.org:443 ssl:default [Сетевая папка недоступна. За информацией о разрешении проблем в сети обратитесь к справочной системе Windows]
+2025-01-22 16:19:35,185 - aiogram.dispatcher - WARNING - Sleep for 3.120738 seconds and try again... (tryings = 4, bot id = 8174394215)
+2025-01-22 16:19:50,064 - aiogram.dispatcher - INFO - Connection established (tryings = 5, bot id = 8174394215)
+2025-01-22 17:39:10,195 - aiogram.dispatcher - ERROR - Failed to fetch updates - TelegramNetworkError: HTTP Client says - Request timeout error
+2025-01-22 17:39:10,219 - aiogram.dispatcher - WARNING - Sleep for 1.000000 seconds and try again... (tryings = 0, bot id = 8174394215)
+2025-01-22 17:39:11,223 - aiogram.dispatcher - ERROR - Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientConnectorError: Cannot connect to host api.telegram.org:443 ssl:default [getaddrinfo failed]
+2025-01-22 17:39:11,224 - aiogram.dispatcher - WARNING - Sleep for 1.271425 seconds and try again... (tryings = 1, bot id = 8174394215)
+2025-01-22 17:39:12,498 - aiogram.dispatcher - ERROR - Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientConnectorError: Cannot connect to host api.telegram.org:443 ssl:default [getaddrinfo failed]
+2025-01-22 17:39:12,498 - aiogram.dispatcher - WARNING - Sleep for 1.516303 seconds and try again... (tryings = 2, bot id = 8174394215)
+2025-01-22 17:39:14,016 - aiogram.dispatcher - ERROR - Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientConnectorError: Cannot connect to host api.telegram.org:443 ssl:default [getaddrinfo failed]
+2025-01-22 17:39:14,016 - aiogram.dispatcher - WARNING - Sleep for 2.103554 seconds and try again... (tryings = 3, bot id = 8174394215)
+2025-01-22 17:39:27,761 - aiogram.dispatcher - INFO - Connection established (tryings = 4, bot id = 8174394215)
+2025-01-22 17:45:18,770 - aiogram.dispatcher - INFO - Polling stopped
+2025-01-22 17:45:19,050 - aiogram.dispatcher - INFO - Polling stopped for bot @yuklovchilik_robot id=8174394215 - 'Yuklovchi'
+2025-01-22 17:45:32,979 - root - INFO - Bot ishga tushdi
+2025-01-22 17:45:32,981 - aiogram.dispatcher - INFO - Start polling
+2025-01-22 17:45:33,655 - aiogram.dispatcher - INFO - Run polling for bot @yuklovchilik_robot id=8174394215 - 'Yuklovchi'
+2025-01-22 17:45:44,970 - aiogram.event - INFO - Update id=908347915 is handled. Duration 1344 ms by bot id=8174394215
+2025-01-22 17:45:47,386 - aiogram.event - INFO - Update id=908347916 is handled. Duration 467 ms by bot id=8174394215
+2025-01-22 17:46:10,882 - root - INFO - Bot ishga tushdi
+2025-01-22 17:46:13,535 - aiogram.event - INFO - Update id=908347917 is handled. Duration 3407 ms by bot id=8174394215
+2025-01-22 17:48:43,467 - aiogram.dispatcher - INFO - Polling stopped
+2025-01-22 17:48:43,718 - aiogram.dispatcher - INFO - Polling stopped for bot @yuklovchilik_robot id=8174394215 - 'Yuklovchi'
+2025-01-22 17:48:43,794 - asyncio - ERROR - Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x0000017771C7FCE0>
+2025-01-22 17:48:52,540 - root - INFO - Bot ishga tushdi
+2025-01-22 17:48:52,541 - aiogram.dispatcher - INFO - Start polling
+2025-01-22 17:48:53,865 - aiogram.dispatcher - INFO - Run polling for bot @yuklovchilik_robot id=8174394215 - 'Yuklovchi'
+2025-01-22 17:49:12,280 - aiogram.event - INFO - Update id=908347918 is handled. Duration 875 ms by bot id=8174394215
+2025-01-22 17:49:18,981 - root - INFO - Bot ishga tushdi
+2025-01-22 17:49:22,767 - aiogram.event - INFO - Update id=908347919 is handled. Duration 4250 ms by bot id=8174394215
+2025-01-22 17:50:40,473 - aiogram.event - INFO - Update id=908347920 is handled. Duration 2000 ms by bot id=8174394215
+2025-01-22 17:50:42,945 - aiogram.event - INFO - Update id=908347921 is handled. Duration 266 ms by bot id=8174394215
+2025-01-22 17:50:44,967 - aiogram.event - INFO - Update id=908347922 is handled. Duration 203 ms by bot id=8174394215
+2025-01-22 17:50:46,581 - aiogram.event - INFO - Update id=908347923 is not handled. Duration 16 ms by bot id=8174394215
+2025-01-22 17:51:42,969 - aiogram.dispatcher - INFO - Polling stopped
+2025-01-22 17:51:43,220 - aiogram.dispatcher - INFO - Polling stopped for bot @yuklovchilik_robot id=8174394215 - 'Yuklovchi'
+2025-01-22 17:51:43,321 - asyncio - ERROR - Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x00000121750F6870>
+2025-01-22 17:51:51,157 - root - INFO - Bot ishga tushdi
+2025-01-22 17:51:51,159 - aiogram.dispatcher - INFO - Start polling
+2025-01-22 17:51:53,170 - aiogram.dispatcher - INFO - Run polling for bot @yuklovchilik_robot id=8174394215 - 'Yuklovchi'
+2025-01-22 17:51:54,771 - aiogram.event - INFO - Update id=908347924 is not handled. Duration 0 ms by bot id=8174394215
+2025-01-22 17:52:05,671 - aiogram.event - INFO - Update id=908347925 is handled. Duration 1110 ms by bot id=8174394215
+2025-01-22 17:52:08,326 - aiogram.event - INFO - Update id=908347926 is handled. Duration 483 ms by bot id=8174394215
+2025-01-22 17:52:10,766 - aiogram.event - INFO - Update id=908347927 is handled. Duration 265 ms by bot id=8174394215
+2025-01-22 17:52:12,574 - aiogram.event - INFO - Update id=908347928 is not handled. Duration 0 ms by bot id=8174394215
+2025-01-22 17:52:34,529 - aiogram.dispatcher - INFO - Polling stopped
+2025-01-22 17:52:34,778 - aiogram.dispatcher - INFO - Polling stopped for bot @yuklovchilik_robot id=8174394215 - 'Yuklovchi'
+2025-01-22 17:52:40,024 - root - INFO - Bot ishga tushdi
+2025-01-22 17:52:40,025 - aiogram.dispatcher - INFO - Start polling
+2025-01-22 17:52:40,746 - aiogram.dispatcher - INFO - Run polling for bot @yuklovchilik_robot id=8174394215 - 'Yuklovchi'
+2025-01-22 17:52:43,482 - aiogram.event - INFO - Update id=908347929 is handled. Duration 656 ms by bot id=8174394215
+2025-01-22 17:52:47,328 - aiogram.event - INFO - Update id=908347930 is handled. Duration 2030 ms by bot id=8174394215
+2025-01-22 17:52:51,237 - aiogram.event - INFO - Update id=908347931 is handled. Duration 1328 ms by bot id=8174394215
+2025-01-22 17:52:53,257 - aiogram.event - INFO - Update id=908347932 is handled. Duration 250 ms by bot id=8174394215
+2025-01-22 17:53:47,532 - aiogram.dispatcher - INFO - Polling stopped
+2025-01-22 17:53:47,782 - aiogram.dispatcher - INFO - Polling stopped for bot @yuklovchilik_robot id=8174394215 - 'Yuklovchi'
+2025-01-22 20:49:01,871 - root - INFO - Bot ishga tushdi
+2025-01-22 20:49:01,875 - aiogram.dispatcher - INFO - Start polling
+2025-01-22 20:49:02,735 - aiogram.dispatcher - INFO - Run polling for bot @yuklovchilik_robot id=8174394215 - 'Yuklovchi'
+2025-01-22 20:49:13,147 - aiogram.event - INFO - Update id=908347933 is handled. Duration 1656 ms by bot id=8174394215
+2025-01-22 20:49:22,640 - aiogram.event - INFO - Update id=908347934 is handled. Duration 2515 ms by bot id=8174394215
+2025-01-22 20:49:28,212 - aiogram.event - INFO - Update id=908347935 is handled. Duration 234 ms by bot id=8174394215
+2025-01-22 20:49:33,195 - aiogram.event - INFO - Update id=908347936 is handled. Duration 1062 ms by bot id=8174394215
+2025-01-22 20:49:38,178 - aiogram.event - INFO - Update id=908347937 is handled. Duration 327 ms by bot id=8174394215
+2025-01-22 20:49:43,442 - aiogram.event - INFO - Update id=908347938 is handled. Duration 780 ms by bot id=8174394215
+2025-01-22 20:49:46,502 - aiogram.event - INFO - Update id=908347939 is handled. Duration 312 ms by bot id=8174394215
+2025-01-22 20:49:50,327 - aiogram.event - INFO - Update id=908347940 is handled. Duration 905 ms by bot id=8174394215
+2025-01-22 20:50:25,422 - aiogram.event - INFO - Update id=908347941 is handled. Duration 4797 ms by bot id=8174394215
+2025-01-22 20:50:28,304 - aiogram.event - INFO - Update id=908347942 is handled. Duration 858 ms by bot id=8174394215
+2025-01-22 20:50:30,619 - aiogram.event - INFO - Update id=908347943 is handled. Duration 905 ms by bot id=8174394215
+2025-01-22 20:50:35,128 - aiogram.event - INFO - Update id=908347944 is handled. Duration 2030 ms by bot id=8174394215
+2025-01-22 20:50:40,468 - aiogram.event - INFO - Update id=908347945 is handled. Duration 641 ms by bot id=8174394215
+2025-01-22 20:50:43,628 - aiogram.event - INFO - Update id=908347946 is handled. Duration 1265 ms by bot id=8174394215
+2025-01-22 20:50:46,718 - aiogram.event - INFO - Update id=908347947 is handled. Duration 1094 ms by bot id=8174394215
+2025-01-22 20:57:57,150 - aiogram.dispatcher - INFO - Polling stopped
+2025-01-22 20:57:57,402 - aiogram.dispatcher - INFO - Polling stopped for bot @yuklovchilik_robot id=8174394215 - 'Yuklovchi'
+2025-01-22 20:58:04,223 - root - INFO - Bot ishga tushdi
+2025-01-22 20:58:04,224 - aiogram.dispatcher - INFO - Start polling
+2025-01-22 20:58:11,147 - aiogram.dispatcher - INFO - Run polling for bot @yuklovchilik_robot id=8174394215 - 'Yuklovchi'
+2025-01-22 20:58:13,316 - aiogram.event - INFO - Update id=908347948 is handled. Duration 828 ms by bot id=8174394215
+2025-01-22 20:58:18,133 - aiogram.event - INFO - Update id=908347949 is handled. Duration 1108 ms by bot id=8174394215
+2025-01-22 20:58:22,113 - aiogram.event - INFO - Update id=908347950 is handled. Duration 1187 ms by bot id=8174394215
+2025-01-22 20:58:28,189 - aiogram.event - INFO - Update id=908347951 is handled. Duration 733 ms by bot id=8174394215
+2025-01-22 20:58:33,986 - aiogram.event - INFO - Update id=908347952 is handled. Duration 219 ms by bot id=8174394215
+2025-01-22 20:58:36,691 - aiogram.event - INFO - Update id=908347953 is handled. Duration 266 ms by bot id=8174394215
+2025-01-22 20:58:39,728 - aiogram.event - INFO - Update id=908347954 is handled. Duration 734 ms by bot id=8174394215
+2025-01-22 20:58:43,780 - aiogram.event - INFO - Update id=908347955 is handled. Duration 1703 ms by bot id=8174394215
+2025-01-22 20:58:45,846 - aiogram.event - INFO - Update id=908347956 is handled. Duration 546 ms by bot id=8174394215
+2025-01-22 20:58:49,866 - aiogram.event - INFO - Update id=908347957 is handled. Duration 1375 ms by bot id=8174394215
+2025-01-22 20:58:52,221 - aiogram.event - INFO - Update id=908347958 is handled. Duration 391 ms by bot id=8174394215
+2025-01-22 20:59:55,760 - aiogram.event - INFO - Update id=908347959 is not handled. Duration 0 ms by bot id=8174394215
+2025-01-22 21:00:23,237 - aiogram.event - INFO - Update id=908347960 is handled. Duration 3469 ms by bot id=8174394215
+2025-01-22 21:00:28,593 - aiogram.event - INFO - Update id=908347961 is handled. Duration 1187 ms by bot id=8174394215
+2025-01-22 21:00:49,721 - aiogram.event - INFO - Update id=908347962 is not handled. Duration 0 ms by bot id=8174394215
+2025-01-22 21:00:53,030 - aiogram.event - INFO - Update id=908347963 is not handled. Duration 0 ms by bot id=8174394215
+2025-01-22 21:14:05,153 - aiogram.dispatcher - INFO - Polling stopped
+2025-01-22 21:14:05,404 - aiogram.dispatcher - INFO - Polling stopped for bot @yuklovchilik_robot id=8174394215 - 'Yuklovchi'
+2025-01-22 21:14:11,396 - root - INFO - Bot ishga tushdi
+2025-01-22 21:14:11,397 - aiogram.dispatcher - INFO - Start polling
+2025-01-22 21:14:12,301 - aiogram.dispatcher - INFO - Run polling for bot @yuklovchilik_robot id=8174394215 - 'Yuklovchi'
+2025-01-22 21:14:28,361 - aiogram.event - INFO - Update id=908347964 is handled. Duration 6234 ms by bot id=8174394215
+2025-01-22 21:14:31,204 - aiogram.event - INFO - Update id=908347965 is handled. Duration 1328 ms by bot id=8174394215
+2025-01-22 21:14:32,907 - aiogram.event - INFO - Update id=908347966 is handled. Duration 1062 ms by bot id=8174394215
+2025-01-22 21:15:06,702 - aiogram.dispatcher - INFO - Polling stopped
+2025-01-22 21:15:06,953 - aiogram.dispatcher - INFO - Polling stopped for bot @yuklovchilik_robot id=8174394215 - 'Yuklovchi'
+2025-01-22 21:15:13,678 - root - INFO - Bot ishga tushdi
+2025-01-22 21:15:13,678 - aiogram.dispatcher - INFO - Start polling
+2025-01-22 21:15:17,110 - aiogram.dispatcher - INFO - Run polling for bot @yuklovchilik_robot id=8174394215 - 'Yuklovchi'
+2025-01-22 21:15:21,569 - aiogram.event - INFO - Update id=908347967 is handled. Duration 4108 ms by bot id=8174394215
+2025-01-22 21:15:24,140 - aiogram.event - INFO - Update id=908347968 is handled. Duration 2187 ms by bot id=8174394215
+2025-01-22 21:15:26,270 - aiogram.event - INFO - Update id=908347969 is handled. Duration 2358 ms by bot id=8174394215
+2025-01-22 21:15:47,524 - aiogram.event - INFO - Update id=908347970 is handled. Duration 594 ms by bot id=8174394215
+2025-01-22 21:16:10,515 - aiogram.dispatcher - INFO - Polling stopped
+2025-01-22 21:16:10,766 - aiogram.dispatcher - INFO - Polling stopped for bot @yuklovchilik_robot id=8174394215 - 'Yuklovchi'
+2025-01-23 03:06:02,068 - root - INFO - Bot ishga tushdi
+2025-01-23 03:06:02,072 - aiogram.dispatcher - INFO - Start polling
+2025-01-23 03:06:02,796 - aiogram.dispatcher - INFO - Run polling for bot @yuklovchilik_robot id=8174394215 - 'Yuklovchi'
+2025-01-23 03:06:03,999 - aiogram.event - INFO - Update id=908347971 is handled. Duration 1030 ms by bot id=8174394215
+2025-01-23 03:06:10,980 - aiogram.event - INFO - Update id=908347972 is handled. Duration 172 ms by bot id=8174394215
+2025-01-23 03:06:19,988 - aiogram.event - INFO - Update id=908347973 is handled. Duration 202 ms by bot id=8174394215
+2025-01-23 03:06:23,212 - aiogram.event - INFO - Update id=908347974 is handled. Duration 875 ms by bot id=8174394215
+2025-01-23 03:06:24,953 - aiogram.event - INFO - Update id=908347975 is handled. Duration 187 ms by bot id=8174394215
+2025-01-23 03:06:31,638 - aiogram.event - INFO - Update id=908347976 is handled. Duration 328 ms by bot id=8174394215
+2025-01-23 03:06:33,712 - aiogram.event - INFO - Update id=908347977 is handled. Duration 187 ms by bot id=8174394215
+2025-01-23 03:06:35,128 - aiogram.event - INFO - Update id=908347978 is handled. Duration 171 ms by bot id=8174394215
+2025-01-23 03:08:07,092 - aiogram.event - INFO - Update id=908347979 is not handled. Duration 0 ms by bot id=8174394215
+2025-01-23 03:08:12,819 - aiogram.event - INFO - Update id=908347980 is handled. Duration 453 ms by bot id=8174394215
+2025-01-23 03:08:14,940 - aiogram.event - INFO - Update id=908347981 is handled. Duration 155 ms by bot id=8174394215
+2025-01-23 03:08:16,795 - aiogram.event - INFO - Update id=908347982 is handled. Duration 172 ms by bot id=8174394215
+2025-01-23 03:09:24,241 - aiogram.event - INFO - Update id=908347983 is handled. Duration 515 ms by bot id=8174394215
+2025-01-23 03:09:26,753 - aiogram.event - INFO - Update id=908347984 is handled. Duration 187 ms by bot id=8174394215
+2025-01-23 03:09:37,899 - aiogram.event - INFO - Update id=908347985 is handled. Duration 171 ms by bot id=8174394215
+2025-01-23 03:09:42,799 - aiogram.event - INFO - Update id=908347986 is handled. Duration 172 ms by bot id=8174394215
+2025-01-23 03:09:45,235 - aiogram.event - INFO - Update id=908347987 is handled. Duration 172 ms by bot id=8174394215
+2025-01-23 03:10:08,412 - aiogram.dispatcher - INFO - Polling stopped
+2025-01-23 03:10:08,673 - aiogram.dispatcher - INFO - Polling stopped for bot @yuklovchilik_robot id=8174394215 - 'Yuklovchi'

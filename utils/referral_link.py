@@ -165,7 +165,7 @@ def check_is_sub(user_id):
     result = cursor.fetchone()
 
     conn.close()
-    return result[0] if result else 0
+    return True if int(result[0])==1 else False
 
 def activate_is_sub(user_id):
 

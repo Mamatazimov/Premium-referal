@@ -69,4 +69,45 @@ async def need_sub_channel_kb():
     return need_sub_channel.as_markup()
 
 
+prince_menu = InlineKeyboardBuilder()
+prince_menu.row(
+    InlineKeyboardButton(text="O'yinlar 🎮",callback_data="games"),
+    InlineKeyboardButton(text="Dasturlar 📱",callback_data="programs")
+)
 
+prince_menu_kb = prince_menu.as_markup()
+
+
+games_prince=InlineKeyboardBuilder()
+games_prince.row(
+    InlineKeyboardButton(text="Pubg",callback_data="pubg"),
+    InlineKeyboardButton(text="Supercell o'yinlari",callback_data="supercell")
+)
+prince_menu.row(
+    InlineKeyboardButton(text="Orqaga 🔙",callback_data="to_back_prince")
+)
+games_prince_kb=games_prince.as_markup()
+
+
+programs_prince = InlineKeyboardBuilder()
+programs_prince.row(
+    InlineKeyboardButton(text="Telegram premium 👾",callback_data="tg_premium"),
+    InlineKeyboardButton(text="Telegram stars ✨",callback_data="tg_star")
+)
+prince_menu.row(
+    InlineKeyboardButton(text="Orqaga 🔙",callback_data="to_back_prince")
+)
+programs_prince_kb = programs_prince.as_markup()
+
+
+supercell_games = InlineKeyboardBuilder()
+supercell_games.row(
+    InlineKeyboardButton(text="Clash of clans",callback_data="coc"),
+    InlineKeyboardButton(text="Clash royale",callback_data="cr"),
+    InlineKeyboardButton(text="Brawl stars ✨",callback_data="bs")
+)
+supercell_games.adjust(2)
+supercell_games_kb = supercell_games.as_markup()
+
+
+back_to_supercell_kb = InlineKeyboardBuilder().row(InlineKeyboardButton(text="Orqaga 🔙",callback_data="back_to_s")).as_markup()

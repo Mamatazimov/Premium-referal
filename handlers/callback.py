@@ -6,7 +6,7 @@ from aiogram.fsm.state import State, StatesGroup
 from aiogram.fsm.storage.memory import MemoryStorage
 
 
-from keyboards.inline import  to_back_kb , referral_blrd_kb,user_profile_kb,to_back_profile_kb,channel_menu_kb
+from keyboards.inline import  to_back_kb , referral_blrd_kb,user_profile_kb,to_back_profile_kb,channel_menu_kb,games_prince_kb,programs_prince_kb,supercell_games_kb,back_to_supercell_kb
 from utils.referral_link import get_user_referrals, get_user_referrer,get_user_points,get_user_info,get_users_stat,get_referral_users_stat
 from utils.promocode import get_promo_code,create_promo_code,aktive_promo_stat,inaktive_promo_stat
 from utils.channels import add_channel,delete_channel,get_all_channel_id
@@ -179,5 +179,105 @@ async def add_point_refr(cq: types.CallbackQuery,state:FSMContext):
 async def send_message_all_admin(cq: types.CallbackQuery,state:FSMContext):
     await cq.message.answer("Xabar matnini tashlang")
     await state.set_state(Send_msg_all.waiting_for_message)
+
+# O'yinlar bo'limi
+async def games_prince(cq: types.CallbackQuery):
+    await cq.message.edit_text("O'yinlar bo'limi 🎮",reply_markup=games_prince_kb)
+
+# Ilovalar bo'limi
+async def program_prince(cq: types.CallbackQuery):
+    await cq.message.edit_text("Ilovalar bo'limi 📱", reply_markup=programs_prince_kb)
+
+# Pubg uc narxlari
+async def pubg_uc(cq: types.CallbackQuery):
+    await cq.message.edit_text(f"<b>Pubg mobile o'yinidagi uc narxlari 👇:</b>\n\n"
+                               "<i>60 uc - 12k so'm</i>\n"
+                               "<i>325 uc - 58k so'm</i>\n"
+                               "<i>660 uc - 115k so'm</i>\n"
+                                "<i>1800 uc - 285k so'm</i>\n"
+                                "<i>3850 uc - 560k so'm</i>\n"
+                                "<i>8100 uc - 1120k so'm</i>\n\n"
+                                "<b>Adminlar: <i>@Nufada , @Cns_cewr</i></b>"
+                               )
+    
+# Supercell narxlari
+async def sepercell_gm(cq: types.CallbackQuery):
+    await cq.message.edit_text(f"Supercell o'yinni tanlang",reply_markup=supercell_games_kb)
+
+# Clash of clans
+async def clashofclans(cq: types.CallbackQuery):
+    await cq.message.edit_text("<b>Clash of clans o'yinidagi gem narxlari 👇:</b>\n\n"
+                               "<i>80 gem - 14k so'm</i>\n"
+                               "<i>500 gem - 69k so'm</i>\n"
+                               "<i>1200 gem - 129k so'm</i>\n"
+                               "<i>2500 gem - 249k so'm</i>\n"
+                                "<i>6500 gem - 640k so'm</i>\n"
+                                "<i>14000 gem - 1200k so'm</i>\n"
+                                "<i>Gold pass - 90k so'm</i>\n\n"
+                                "<i>Agarda personajlarga yoki bazaga skinlar kerak bo'lsa adminlarga murojat qilib narxlarni kelishishingiz mumkin.</i>\n"
+                                "<b>Adminlar: <i>@Nufada , @Cns_cewr</i></b>",reply_markup=back_to_supercell_kb
+                               )
+
+# Clash royal
+async def clashroyal(cq: types.CallbackQuery):
+    await cq.message.edit_text("<b>Clash royal o'yinidagi gem narxlari 👇:</b>\n\n"
+                               "<i>80 gem - 14k so'm</i>\n"
+                               "<i>500 gem - 69k so'm</i>\n"
+                               "<i>1200 gem - 129k so'm</i>\n"
+                               "<i>2500 gem - 249k so'm</i>\n"
+                                "<i>6500 gem - 640k so'm</i>\n"
+                                "<i>14000 gem - 1200k so'm</i>\n"
+                                "<i>Almaz pass - 145k so'm</i>\n\n"
+                                "<i>Agarda personajlarga yoki bazaga skinlar kerak bo'lsa adminlarga murojat qilib narxlarni kelishishingiz mumkin.</i>\n"
+                                "<b>Adminlar: <i>@Nufada , @Cns_cewr</i></b>",reply_markup=back_to_supercell_kb
+                               )
+
+# Squad busters 
+async def brawlstars(cq: types.CallbackQuery):
+    await cq.message.edit_text("<b>Brawl stars o'yinidagi  narxlari 👇:</b>\n\n"
+                               "<i>80 gem - 14k so'm</i>\n"
+                               "<i>500 gem - 69k so'm</i>\n"
+                               "<i>1200 gem - 129k so'm</i>\n"
+                               "<i>2500 gem - 249k so'm</i>\n"
+                                "<i>6500 gem - 640k so'm</i>\n"
+                                "<i>14000 gem - 1200k so'm</i>\n"
+                                "<i>Gold pass - 90k so'm</i>\n\n"
+                                "<i>Agarda personajlarga yoki bazaga skinlar kerak bo'lsa adminlarga murojat qilib narxlarni kelishishingiz mumkin.</i>\n"
+                                "<b>Adminlar: <i>@Nufada , @Cns_cewr</i></b>",reply_markup=back_to_supercell_kb)
+
+
+# Telegram premium
+async def tg_pr(cq: types.CallbackQuery):
+    await cq.message.edit_text(
+        "<b>Premium narxlari bilan tanishishingiz mumkin:</b>\n"
+        "<b>Telegram akkauntizga kirib olib beriladi:</b>\n\n"
+        "<i>1 oylik telegram premium: 52000 Uzs</i>\n"
+        "<i>12 oylik telegram premium: 299000 Uzs</i>\n\n"
+        "<b>Telegram akkauntizga kirmasdan olib beriladi:</b>\n\n"
+        "<i>3 oylik telegram premium: 189000 Uzs</i>\n"
+        "<i>6 oylik telegram premium: 239000 Uzs</i>\n"
+        "<i>12 oylik telegram premium: 399000 Uzs</i>\n\n"
+        "<i>Narxlar ma'qul kelgan bo'lsa adminlar:</i>\n"
+        "<i>Admin 1  @Nufada</i>\n"
+        "<i>Admin 2  @Cns_cewr</i>\n"
+    )
+
+# Telegram star
+async def tg_sr(cq: types.CallbackQuery):
+    await cq.message.edit_text("<b>Telegram stars narxlari bilan tanishishingiz mumkin:</b>\n\n"
+                                "<i>100ta star - 27k so'm</i>\n"
+                                "<i>150ta star - 40k so'm</i>\n"
+                                "<i>250ta star - 65k so'm</i>\n"
+                                "<i>350ta star - 85k so'm</i>\n"
+                                "<i>500ta star - 120k so'm</i>\n"
+                                "<i>750ta star - 180k so'm</i>\n"
+                                "<i>1000ta star - 240k so'm</i>\n\n"
+                                "<b>Adminlar: <i>@Nufada , @Cns_cewr</i></b>"
+                               )
+
+
+
+
+
 
 

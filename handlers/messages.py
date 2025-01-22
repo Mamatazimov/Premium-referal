@@ -9,7 +9,7 @@ from aiogram.fsm.storage.memory import MemoryStorage
 
 from keyboards.reply import main_keyboard
 from config import Admin_Id
-from keyboards.inline import referral_blrd_kb,user_profile_kb,admin_menu_kb
+from keyboards.inline import referral_blrd_kb,user_profile_kb,admin_menu_kb,prince_menu_kb
 from utils import referral_link,promocode,channels
 
 
@@ -19,23 +19,10 @@ async def message_answers(message: types.Message):
 
 
 
-    if message.text == "Premium narxlari 💸" :
-        message_answer = """
-<b>Premium narxlari bilan tanishishingiz mumkin:</b>\n
-<b>Telegram akkauntizga kirib olib beriladi:</b>\n
-<b>1 oylik telegram premium:</b><i> 52000 Uzs</i>\n
-<b>12 oylik telegram premium:</b><i> 299000 Uzs</i>\n
-\n
-<b>Telegram akkauntizga kirmasdan olib beriladi:</b>\n
-<b>3 oylik telegram premium:</b><i> 189000 Uzs</i>\n
-<b>6 oylik telegram premium:</b><i> 239000 Uzs</i>\n
-<b>12 oylik telegram premium:</b><i> 399000 Uzs</i>\n
-\n
-<b>Narxlar ma'qul kelgan bo'lsa adminlar:</b>\n
-<b>Admin 1 </b> @Nufada\n
-<b>Admin 2 </b> @Cns_cewr\n
-"""
-        await message.answer(text=message_answer,parse_mode="HTML")
+    if message.text == "Narxlari 💸" :
+        message_answer = "Bo'limni tanlang 👇"
+
+        await message.answer(text=message_answer,reply_markup=prince_menu_kb,parse_mode="HTML")
 
     
     elif message.text == "Referral tizimi 🫱🏼‍🫲🏽":
@@ -119,8 +106,9 @@ async def get_to_admin_user_id(message: types.Message,state: FSMContext):
         else:
             userN = f"@{userN}"
         
+        user_promo_codes = promocode.get_promo_code(user_id=user_id)
         
-        await message.answer(f"Ism: {firstN}\nFamiliya: {lastN}\nUsername: {userN}\nReferrallar soni: {my_ref}\nPointlar: {user_info[3]}\nUser id:{user_id}")
+        await message.answer(f"Ism: {firstN}\nFamiliya: {lastN}\nUsername: {userN}\nReferrallar soni: {my_ref}\nPointlar: {user_info[5]}\nUser id:{user_id}\nUser promo-codelari: {user_promo_codes}")
         await state.clear()
 
     except TelegramBadRequest:
